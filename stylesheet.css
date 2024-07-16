@@ -249,7 +249,7 @@ body {
   display: inline-block;
 }
 
-.read {
+/* .read {
   display: inline-block;
   padding: 12px 28px;
   background: #0ef;
@@ -271,7 +271,7 @@ body {
     0 0 50px cyan,
      0 0 100px cyan,
     0 0 200px cyan;
-}
+} */
 
 .services-list div:hover {
   transform: translateY(-10px);
