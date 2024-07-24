@@ -185,9 +185,14 @@ body {
 
 .about-text p {
   color: aliceblue;
-  font-size: 25px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.7;
   margin-bottom: 4rem;
+  margin-right: 20px;  /*new added by me */
+}
+
+.about-text a {
+  pointer-events: none; /* extra added by me $$$$$$$$$$$$ */
 }
 
 .container {
@@ -233,12 +238,15 @@ body {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
+  /* margin-top: -25px; */
 }
 
 .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+  /* text-align: center; */
+  /* margin-top: -20px; */
 }
 
 .services-list div a {
@@ -615,7 +623,11 @@ section {
 }
 
 .row:hover .layer {
-  height: 100%;   /*yahan kaam ni ho paya h mtlb teeno images pe hover krne pr texts sb ni show kr rha h */
+  height: 100%;
+}
+
+.row:hover .layer a{
+  pointer-events: none;  /* extra work done by me...$$$$$$$$$$$$$$$$ */
 }
 
 .contact {
@@ -768,14 +780,6 @@ section {
   padding: 10px;
   border-radius: 0.5rem;
 }
-
-
-
-
-
-
-
-
 
 
 
