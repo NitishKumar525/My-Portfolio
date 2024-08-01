@@ -159,6 +159,10 @@ body {
   gap: 1.5rem;
 }
 
+.about-text{
+  margin-top: 110px;
+}
+
 .about-img img {
   padding-bottom: 20%;
   max-width: 630px;
@@ -197,6 +201,7 @@ body {
 
 .container {
   padding: 90px;
+  margin-top: 50px;
 }
 
 #services {
@@ -210,6 +215,7 @@ body {
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
+  margin-top: -30px;
 }
 
 .sub-title span {
@@ -221,7 +227,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .services-list div {
@@ -238,15 +244,25 @@ body {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
+  margin-left: 130px;
   /* margin-top: -25px; */
 }
 
 .services-list div h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 15px;
   /* text-align: center; */
   /* margin-top: -20px; */
+}
+
+.services-list div p {
+  font-size: 15px;
+}
+
+.new {
+  text-align: center;
+  color: lavenderblush;
 }
 
 .services-list div a {
@@ -290,11 +306,22 @@ section {
   flex-wrap: wrap;
 }
 
+.sub-titles {
+  text-align: center;
+  font-size: 60px;
+  /* padding-bottom: 70px; */
+}
+
+.sub-titles span {
+  color: #0ef;
+}
+
 .container1 {
   height: 500px;
   width: 600px;
   padding: 75px 90px;
   margin-left: 120px;
+  margin-top: -60px;
 }
 
 .heading1 {
@@ -303,6 +330,7 @@ section {
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .bar {
@@ -713,6 +741,7 @@ section {
 
 .contact-form form {
   position: relative;
+  margin-top: 100px;
 }
 
 .contact-form form input,form textarea {
@@ -770,7 +799,7 @@ section {
 .top {
   position: fixed;
   bottom: 2.1rem;
-  right: 2.1rem;
+  right: 1.3rem;
 }
 
 .top i {
