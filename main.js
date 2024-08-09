@@ -26,5 +26,3 @@ window.onscroll = () => {
         }
     });
 };
-
-
