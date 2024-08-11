@@ -144,12 +144,11 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px #0ef;
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 100px cyan;
 }
 
 .about {
@@ -195,9 +194,9 @@ body {
   margin-right: 20px;  /*new added by me */
 }
 
-.about-text a {
-  pointer-events: none; /* extra added by me $$$$$$$$$$$$ */
-}
+/* .about-text a {
+  pointer-events: none; extra added by me $$$$$$$$$$$$
+} */
 
 .container {
   padding: 90px;
@@ -777,14 +776,14 @@ section {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px #0ef;
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 5px cyan,
-   0 0 25px cyan,
-     0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 
+      /* 0 0 25px cyan, */
+     /* 0 0 100px cyan, */
+    0 0 100px cyan;
 }
 
 .last-text p {
@@ -865,4 +864,13 @@ section {
   from{
     width: 0;
   }
+}
+
+
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
 }
