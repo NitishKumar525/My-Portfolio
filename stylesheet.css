@@ -10,6 +10,36 @@ body {
   color: #ededed;
   background: #081b29;
 }
+.hamburger {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* .navbar {
+  display: none;
+  list-style: none;
+} */
+ .navbar a {
+  margin: 10px 0;
+}
+
+.navbar.active {
+  display: block;
+} 
+
 
 .header {
   position: fixed;
@@ -53,22 +83,47 @@ body {
   /* transform: scale(1.2); */
 }
 
-.Home {
+/* .Home {
   position: relative;
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(image/nit_wallpaper.jpg) no-repeat;
+  background: url() no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
-}
+} */
+
 
 .Home-content {
-  max-width: 600px;
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: flex-end;
 }
+
+.photo{
+  background: url(image/Lathi.jpg) no-repeat;
+  height:30rem;
+  width: 30rem;
+  /* margin-right: 3rem; */
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.name{
+  width: 40%;
+  margin:7rem 15% 0 5rem;
+  direction: ltr;
+}
+
+.name p{
+  text-align: justify;
+}
+
 
 .Home-content h3 {
   font-size: 32px;
@@ -156,18 +211,21 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  margin-top: 5rem;
 }
 
 .about-text{
   margin-top: 110px;
 }
 
-.about-img img {
-  padding-bottom: 20%;
-  max-width: 630px;
-  height: auto;
-  width: 100%;
-  border-radius: 8px;
+.about-img{
+ width: 450px;
+ height: 450px;
+ background: url(image/Lathi.jpg);
+ background-size: cover;
+ border-radius: 50%;
+ margin-left: 2rem;
+ margin-top: 0;
 }
 
 .about-text h2 {
@@ -191,6 +249,7 @@ body {
   font-size: 20px;
   line-height: 1.7;
   margin-bottom: 4rem;
+  text-align: justify;
   margin-right: 20px;  /*new added by me */
 }
 
@@ -207,7 +266,8 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 4rem;
+  margin-bottom:4rem ;
+  margin-top: 5rem;
 }
 
 .sub-title {
@@ -257,6 +317,7 @@ body {
 
 .services-list div p {
   font-size: 15px;
+  text-align: justify;
 }
 
 .new {
@@ -315,13 +376,13 @@ section {
   color: #0ef;
 }
 
-.container1 {
+ .container1 { 
   height: 500px;
   width: 600px;
   padding: 75px 90px;
   margin-left: 120px;
   margin-top: -60px;
-}
+} 
 
 .heading1 {
   text-align: center;
@@ -689,6 +750,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .contact-list {
@@ -874,3 +936,196 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
+
+
+@media only screen and (max-width: 1200px){
+  .header {
+    padding: 20px 5%;
+  }
+
+  
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .Home-content {
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo {
+    height: 25rem;
+    width: 25rem;
+    margin-top: 5rem;
+  }
+
+  .name {
+    width: 80%;
+    margin: 4rem 0 0;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  .about-img {
+    margin-top: 5rem;
+    margin-bottom: -80px;
+  
+    width: 250px;
+    height: 250px;
+  }
+
+  .container1{
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading__prof{
+    margin-top: 8rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .hamburger {
+    display: block;
+  }
+  
+  
+  .navbar {
+    display: none;
+    list-style: none;
+  }
+
+  .about-img {
+    width: 200px;
+    height: 200px;
+    background: url(image/Lathi.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    /* margin-left: 25rem; */
+    margin-top: 0;
+}
+}
+
+@media only screen and (max-width: 500px){
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    padding: 20px 10%;
+    background: #081329af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.photo{
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about{
+  margin-top: 3rem;
+}
+.about-img {
+  width: 150px;
+  height: 150px;
+  background: url(image/Lathi.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 0;
+}
+
+.name{
+  width: 100%;
+}
+
+.name p{
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.services-list div h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services-list div p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-top: -25px;
+}
+
+.container1 {
+  height: 500px;
+  width: 400px;
+  padding: 50px 40px;
+  margin-left: 50px;
+  /* margin-top: -70px; */
+}
+.main-text {
+  padding-top: 70px;
+  margin-top: 100px;
+}
+.row img {
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.main-text h2 {
+  font-size: 50px;
+  line-height: 1;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.contact {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+.contact-text h2 {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+contact-text p {
+  color: rgb(177, 177, 177);
+  font-size: 20px;
+  margin-right: 10px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+}
+
