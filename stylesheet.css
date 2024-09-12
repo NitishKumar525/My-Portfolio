@@ -10,6 +10,36 @@ body {
   color: #ededed;
   background: #081b29;
 }
+.hamburger {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* .navbar {
+  display: none;
+  list-style: none;
+} */
+ .navbar a {
+  margin: 10px 0;
+}
+
+.navbar.active {
+  display: block;
+} 
+
 
 .header {
   position: fixed;
@@ -53,22 +83,47 @@ body {
   /* transform: scale(1.2); */
 }
 
-.Home {
+/* .Home {
   position: relative;
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(image/nit_wallpaper.jpg) no-repeat;
+  background: url() no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
-}
+} */
+
 
 .Home-content {
-  max-width: 600px;
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: flex-end;
 }
+
+.photo{
+  background: url(image/Lathi.jpg) no-repeat;
+  height:30rem;
+  width: 30rem;
+  /* margin-right: 3rem; */
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.name{
+  width: 40%;
+  margin:7rem 15% 0 5rem;
+  direction: ltr;
+}
+
+.name p{
+  text-align: justify;
+}
+
 
 .Home-content h3 {
   font-size: 32px;
@@ -156,19 +211,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  margin-top: 5rem;
 }
 
 .about-text{
   margin-top: 110px;
 }
 
-.about-img img {
-  padding-bottom: 20%;
-  max-width: 630px;
-  height: auto;
-  width: 100%;
-  border-radius: 8px;
- 
+
 }
 
 .about-text h2 {
@@ -192,6 +242,7 @@ body {
   font-size: 20px;
   line-height: 1.7;
   margin-bottom: 4rem;
+  text-align: justify;
   margin-right: 20px;  /*new added by me */
 }
 
@@ -208,7 +259,8 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 4rem;
+  margin-bottom:4rem ;
+  margin-top: 5rem;
 }
 
 .sub-title {
@@ -258,6 +310,7 @@ body {
 
 .services-list div p {
   font-size: 15px;
+  text-align: justify;
 }
 
 .new {
@@ -316,13 +369,13 @@ section {
   color: #0ef;
 }
 
-.container1 {
+ .container1 { 
   height: 500px;
   width: 600px;
   padding: 75px 90px;
   margin-left: 120px;
   margin-top: -60px;
-}
+} 
 
 .heading1 {
   text-align: center;
@@ -690,6 +743,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .contact-list {
@@ -875,3 +929,4 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
+
