@@ -106,7 +106,7 @@ body {
 }
 
 .photo{
-  background: url(image/Lathi.jpg) no-repeat;
+  background: url(image/mine.jpg) no-repeat;
   height:30rem;
   width: 30rem;
   /* margin-right: 3rem; */
@@ -221,7 +221,7 @@ body {
 .about-img{
  width: 450px;
  height: 450px;
- background: url(image/Lathi.jpg);
+ background: url(image/mine.jpg);
  background-size: cover;
  border-radius: 50%;
  margin-left: 2rem;
@@ -1012,7 +1012,7 @@ input[type="number"]::-webkit-inner-spin-button{
   .about-img {
     width: 200px;
     height: 200px;
-    background: url(image/Lathi.jpg);
+    background: url(image/mine.jpg);
     background-size: cover;
     border-radius: 50%;
     /* margin-left: 25rem; */
@@ -1046,7 +1046,7 @@ input[type="number"]::-webkit-inner-spin-button{
 .about-img {
   width: 150px;
   height: 150px;
-  background: url(image/Lathi.jpg);
+  background: url(image/mine.jpg);
   background-size: cover;
   border-radius: 50%;
   margin-top: 0;
