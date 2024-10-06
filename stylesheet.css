@@ -112,6 +112,9 @@ body {
   /* margin-right: 3rem; */
   border-radius: 50%;
   background-size: cover;
+  margin-top: 35px;
+  box-shadow: 1px 1px 20px skyblue, 1px 1px 30px skyblue;
+
 }
 
 .name{
@@ -212,6 +215,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   margin-top: 5rem;
+  margin-right: 40px;
 }
 
 .about-text{
@@ -219,13 +223,14 @@ body {
 }
 
 .about-img{
- width: 450px;
- height: 450px;
+ width: 400px;
+ height: 400px;
  background: url(image/mine.jpg);
  background-size: cover;
  border-radius: 50%;
- margin-left: 2rem;
- margin-top: 0;
+ margin-left: 7rem;
+ margin-top: 90px;
+ box-shadow: 1px 1px 20px skyblue, 1px 1px 30px skyblue;
 }
 
 .about-text h2 {
